@@ -1,0 +1,23 @@
+http:
+  timeout: 10
+  rate_limit: 10
+  threads: 10
+  user_agent: "wstg-info/0.1 (authorized security testing)"
+
+scan:
+  depth: 2
+  max_pages: 50
+  max_js_files: 25
+  wordlist: wordlists/common.txt
+
+info01:
+  wayback_limit: 2000
+  max_wayback_hits: 50
+
+info04:
+  max_subdomains: 100
+  max_wordlist: 200
+  ports: []
+
+info07:
+  max_mermaid_nodes: 30
